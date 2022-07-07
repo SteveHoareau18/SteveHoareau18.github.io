@@ -1,0 +1,26 @@
+*{
+    text-align: center;
+}
+ul, a{
+    text-decoration: none;
+    list-style: none;
+}
+h1{
+    color: #06066d;
+}
+h2{
+    color: #2525ff;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+#img-arrow-right{
+    margin-top: 4%;
+}
+.clickable:hover{
+    cursor: pointer;
+}
