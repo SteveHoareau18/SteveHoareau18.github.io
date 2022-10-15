@@ -5,7 +5,7 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #fdf1b8;
+    background-color: #f3f4fc;
 }
 a{
     text-decoration: none;
@@ -14,11 +14,13 @@ a{
 .link{
     font-weight: bold;
     font-family: "Comic Sans MS";
-    color: #050531;
+    color: black;
     text-decoration: underline black;
 }
 
 .header img{
+    position: relative;
+    margin-left: -50%;
     border-radius: 50%;
 }
 .header h1{
@@ -27,15 +29,21 @@ a{
     font-family: Impact;
     font-style: italic;
     letter-spacing: 6px;
+    padding: 0;
+    margin-top: 8%;
     margin-left: 10%;
     width: 100%;
+    color: #e8eaf9;
+}
+.middle > h3{
+    background-color: #2980b9;
 }
 #contact-arrow:hover{
     cursor: pointer;
 }
 #contact-arrow{
     background-color: gray;
-    color: white;
+    color: black;
     border: 2px solid black;
     padding: 2%;
 }
@@ -46,7 +54,7 @@ a{
     width: 50%;
     height: 155px;
     margin-left: 25%;
-    background-color: #e2fcfb;
+    background-color: #050531;
     border-radius: 15% 0 15% 0;
 }
 .header .top{
@@ -98,12 +106,9 @@ a{
     text-align: center;
 }
 .body .ctop a{
-    position: relative;
     font-size: 25px;
     font-family: Impact;
     width: 100%;
-    background-color: aquamarine;
-    padding: 1%;
     border: black 2px solid;
     border-radius: 15% 15% 15% 15%;
 }
@@ -111,15 +116,14 @@ a{
     position: relative;
     margin-left: 23%;
     text-align: center;
-    background-color: #050531;
-    color: white;
+    background-color: #2980b9;
+    color: black;
     width: 55%;
     padding: 1%;
 }
 .body .top a{
     position: relative;
     width: 100%;
-    background-color: aquamarine;
     padding: 1%;
     border: black 2px solid;
     border-radius: 15% 15% 15% 15%;
@@ -140,8 +144,8 @@ a{
 .body .top h3{
     position: relative;
     text-align: center;
-    background-color: #050531;
-    color: white;
+    background-color: #2a2f30;
+    color: black;
     width: 55%;
     padding: 1%;
 }
@@ -152,10 +156,18 @@ a{
     justify-content: space-around;
     width: 100%;
 }
+.body .middle > hr{
+    border: 9px solid #2980b9;
+}
 .body .middle h3{
     position: relative;
     margin-top: 20%;
-    width: 100%;
+    margin-left: 23%;
+    text-align: center;
+    background-color: #2980b9;
+    color: black;
+    width: 55%;
+    padding: 1%;
 }
 .body .middle .content{
     display: flex;
@@ -177,6 +189,10 @@ a{
 }
 .footer a{
     color:white;
+}
+
+h6{
+    font-size: large;
 }
 /*Animations*/
 .flip-card-click:hover{
@@ -221,7 +237,7 @@ a{
 
 .flip-card-back {
   background-color: #2980b9;
-  color: white;
+  color: black;
   transform: rotateY(180deg);
 }
 .monparcourspedagogique ul li{
@@ -231,8 +247,6 @@ a{
     position: relative;
     font-size: 25px;
     font-family: Impact;
-    background-color: aquamarine;
-    padding: 1%;
     border: black 2px solid;
     border-radius: 15% 15% 15% 15%;
 }
