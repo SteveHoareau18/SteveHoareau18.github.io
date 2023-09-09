@@ -72,10 +72,10 @@ a{
 #special-github:hover{
     display:none;
 }
-#citation{
+.citation{
     font-weight: bolder;
     font-style: italic;
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS", serif;
     font-size: 12px;
 }
 .contact{
