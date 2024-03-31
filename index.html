@@ -1,190 +1,332 @@
 <!DOCTYPE html>
 <html lang="fr-FR" xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Portfolio de Steve HOAREAU. Tout droit réservé.">
-    <meta name="keywords" content="Steve HOAREAU, portfolio, developer, HTML, CSS, PHP, JAVA, REDIS, BTS SIO">
-    <meta name="author" content="Steve Hoareau">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Portfolio de Steve HOAREAU. Tout droit réservé."
+    />
+    <meta
+      name="keywords"
+      content="Steve HOAREAU, portfolio, developer, HTML, CSS, PHP, JAVA, REDIS, BTS SIO"
+    />
+    <meta name="author" content="Steve Hoareau" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="-1" />
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <title>Portfolio de Steve HOAREAU</title>
-<!--    <link rel="icon" href="img/favicon.ico">-->
-</head>
-<script src="js/index.js"></script>
+    <!--    <link rel="icon" href="img/favicon.ico">-->
+  </head>
+  <script src="js/index.js"></script>
 
-<body>
+  <body>
     <section id="container">
-        <div class="header">
-            <div class="top-bg">
-            <div class="top">
-                <div><img src="img/steve.jpg" alt="Photo de Steve" style="width: 100px;height: 120px;"></div>
-                <div>
-                    <h1>STEVE HOAREAU</h1>
-                </div>
+      <div class="header">
+        <div class="top-bg">
+          <div class="top">
+            <div>
+              <img
+                src="img/steve.jpg"
+                alt="Photo de Steve"
+                style="width: 100px; height: 120px"
+              />
             </div>
+            <div>
+              <h1>STEVE HOAREAU</h1>
+            </div>
+          </div>
         </div>
-            <div class="citation"><span>
-                    <h2>"Le développement, plus qu'une passion, c'est une envie d'apprendre aux autres."</h2>
-                </span></div>
-            <div class="citation"><span>
-                    <h2>Steve HOAREAU - 21 ans - Passionné de développement, de jeux vidéos et d'animés.</h2>
-                </span></div>
+        <div class="citation">
+          <span>
+            <h2>
+              "Le développement, plus qu'une passion, c'est une envie
+              d'apprendre aux autres."
+            </h2>
+          </span>
         </div>
-        <div class="body" style="margin-top: 0;">
-           
-            <div class="contact">
-                <div id="contact-arrow" onclick="changeContactDisplay()">
-                    <
-                </div>
-                <div id="contact-content">
-                <a href="https://www.linkedin.com/in/steve-hoareau/" target="_blank"><img src="img/linkedin.png" style="width: 60px;height: 60px;" alt="Image de linkedin"></a><br>
-                <a href="mailto:steve.hoareau1@gmail.com" target="_blank"><img src="img/mail.png" style="width: 60px;height: 60px;" alt="Image d'un email(Pour me contacter)"></a><br>
-                <div onmouseover="displayImg()" onmouseout="hideImg()">
-                <img id="special-github" src="img/github.png" style="width: 60px;height: 60px;" alt="Image de GitHub">
-                <a href="https://github.com/SteveHoareau18" target="_blank" style="display: none;" id="github1"><img src="img/github.png" title="Professionnel" style="width: 60px;height: 60px;" alt="Image de github professionnel"></a>
-                <a href="https://github.com/DieuOurs" target="_blank" style="display: none;" id="github2"><img src="img/github.png" title="Personnel" style="width: 60px;height: 60px;" alt="Image de github personnel"></a>
-                
-            </div>
-            </div>
-            </div>
-            <div class="top">
-                <a href="#autodidacte">
-                    Mon parcours en autodidacte
-                </a>
-                <a href="#pedagogique">
-                    Mon parcours pédagogique
-                </a>
-                <a href="#et-ensuite">
-                    Mon futur parcours...
-                </a>
-            </div>
-            <div class="middle">
-                <h3 id="autodidacte">Mon parcours en autodidacte</h3>
-                <div class="content">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="img/java.png" alt="Image de JAVA" style="width: 250px;height: 250px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h6>JAVA</h6>
-
-                                <p>Depuis mes 14 ans, j'apprends le Java en autodidacte, j'apprends presque tous les
-                                    jours de nouvelles méthodes et organisations.</p>
-                                <p>J'ai donc commencé avec Java pour développer des ajouts sur un Jeu. Et aujourd'hui
-                                    encore je continue de développer du Java pour ce même jeu.</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="img/python.png" alt="Image de PYTHON" style="width: 250px;height: 250px;"
-                                    id="card-img-1">
-                            </div>
-                            <div class="flip-card-back">
-                                <h6>PYTHON</h6>
-
-                                <p>Depuis mes 15 ans, j'apprends le Python en autodidacte, j'ai commencé lorsque j'étais
-                                    en seconde mais j'ai continué de mon coté pour apprendre d'avantage.</p>
-                                <p>J'ai aussi beaucoup appris sur Python pendant la
-                                    <span class="link"><a href="monparcourspedagogique.html#lycee">Terminale</a></span> et j'ai continué d'apprendre lors de mon
-                                    deuxième stage en <span class="link"><a href="monparcourspedagogique.html#btssio">BTS SIO</a></span></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="img/html.png" alt="Image de HTML" style="width: 250px;height: 250px;"
-                                    id="card-img-2">
-                            </div>
-                            <div class="flip-card-back">
-                                <h6>HTML/CSS</h6>
-                                <p>Depuis mes 17 ans, j'apprends le HTML/CSS en autodidacte(et une partie de JavaScript,
-                                    pour le Web ou NodeJS pour un projet personnel)</p>
-                                <p>Pour le développement WEB, le HTML/CSS est la base de la base, c'est le squelette
-                                    d'un site. J'ai appris un peu plus sur JavaScript en terminale avec des stages
-                                    d'intervenants de la <span class="link"><a href="monparcourspedagogique.html#lycee">WebCup</a></span>, et en BTS SIO, où on a
-                                    repris certaines bases.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="img/git.png" alt="Image de Git" style="width: 250px;height: 250px;"
-                                    id="card-img-3">
-                            </div>
-                            <div class="flip-card-back">
-                                <h6>GIT</h6>
-                                <p>Depuis mes 18 ans, j'apprends le Git en autodidacte grâce à Java, il était nécessaire que je maîtrise cet outil performant pour gérer mes applications/plugins.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 style="position: relative;margin-top: 20%;" id="pedagogique">Mon parcours pédagogique</h3>
-                <div class="content">
-                    <div class="flip-card-click" onclick="window.location.href='monparcourspedagogique.html#lycee';">
-                        <div class="flip-card">
-
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="img/ecole.png" alt="Image de java" style="width: 250px;height: 250px;">
-                                </div>
-                                <div class="flip-card-back">
-                                    <h6>De la seconde au baccalauréat</h6>
-                                    <p>Cliquez pour en savoir plus !</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flip-card-click" onclick="window.location.href='monparcourspedagogique.html#btssio';">
-                        <div class="flip-card">
-                            <div class="flip-card-inner">
-                                <div class="flip-card-front">
-                                    <img src="img/btssio.png" alt="Image de java" style="width: 250px;height: 250px;"
-                                        id="card-img-4">
-                                </div>
-                                <div class="flip-card-back">
-                                    <h6>Mon BTS SIO</h6>
-                                    <p>Cliquez pour en savoir plus !</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h3 style="position: relative;margin-top: 20%;" id="et-ensuite">Mon futur parcours</h3>
-                <div class="content">
-                    <div class="flip-card">
-                        <div class="flip-card-inner">
-                            <div class="flip-card-front">
-                                <img src="img/question.png" alt="Image de quelqu'un qui réfléchi"
-                                    style="width: 250px;height: 250px;">
-                            </div>
-                            <div class="flip-card-back">
-                                <h6>Je voudrais devenir professeur</h6>
-                                <p>J'envisage un bac+4 Concepteur Développeur d'applications</p>
-                                <p>Puis un M2 Professionnel Informatique ou un M1 MEEF Informatique</p>
-                                <p>Puis je passerai mon concours CAPET ou CAPES spécialité informatique, pendant ou après ma cinquième année. (ou quatrième si l'insitut propose)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="citation">
+          <span>
+            <h2>
+              Steve HOAREAU - 22 ans - Passionné de développement, de jeux
+              vidéos et d'animés.
+            </h2>
+          </span>
         </div>
-        <br>
-        <a href="download/NEW_CV_HOAREAU_STEVE.pdf" target="_blank" id="cv" class="link"><img src="img/pdf.png" title="Mon CV" style="width: 60px;height: 60px;" alt="Image de fichier pdf"><br>Voir mon CV</a>
-        <br><br><br><br><br><br><br><br>
-        <div class="footer">
-            <a href="mentions-legales.html" target="_blank">Steve HOAREAU © 2022 | Mentions Légales</a>
+        <h6 style="color: red">
+          !!! SITE EN REFONTE !!!<br /><a
+            href="https://github.com/SteveHoareau18/portfolio"
+            >https://github.com/SteveHoareau18/portfolio</a
+          >
+        </h6>
+      </div>
+      <div class="body" style="margin-top: 0">
+        <div class="contact">
+          <div id="contact-arrow" onclick="changeContactDisplay()"><</div>
+          <div id="contact-content">
+            <a href="https://www.linkedin.com/in/steve-hoareau/" target="_blank"
+              ><img
+                src="img/linkedin.png"
+                style="width: 60px; height: 60px"
+                alt="Image de linkedin" /></a
+            ><br />
+            <a href="mailto:steve.hoareau1@gmail.com" target="_blank"
+              ><img
+                src="img/mail.png"
+                style="width: 60px; height: 60px"
+                alt="Image d'un email(Pour me contacter)" /></a
+            ><br />
+            <div onmouseover="displayImg()" onmouseout="hideImg()">
+              <img
+                id="special-github"
+                src="img/github.png"
+                style="width: 60px; height: 60px"
+                alt="Image de GitHub"
+              />
+              <a
+                href="https://github.com/SteveHoareau18"
+                target="_blank"
+                style="display: none"
+                id="github1"
+                ><img
+                  src="img/github.png"
+                  title="Professionnel"
+                  style="width: 60px; height: 60px"
+                  alt="Image de github professionnel"
+              /></a>
+              <a
+                href="https://github.com/DieuOurs"
+                target="_blank"
+                style="display: none"
+                id="github2"
+                ><img
+                  src="img/github.png"
+                  title="Personnel"
+                  style="width: 60px; height: 60px"
+                  alt="Image de github personnel"
+              /></a>
+            </div>
+          </div>
         </div>
+        <div class="top">
+          <a href="#autodidacte"> Mon parcours en autodidacte </a>
+          <a href="#pedagogique"> Mon parcours pédagogique </a>
+          <a href="#et-ensuite"> Mon futur parcours... </a>
+        </div>
+        <div class="middle">
+          <h3 id="autodidacte">Mon parcours en autodidacte</h3>
+          <div class="content">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="img/java.png"
+                    alt="Image de JAVA"
+                    style="width: 250px; height: 250px"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <h6>JAVA</h6>
+
+                  <p>
+                    Depuis mes 14 ans, j'apprends le Java en autodidacte,
+                    j'apprends presque tous les jours de nouvelles méthodes et
+                    organisations.
+                  </p>
+                  <p>
+                    J'ai donc commencé avec Java pour développer des ajouts sur
+                    un Jeu. Et aujourd'hui encore je continue de développer du
+                    Java pour ce même jeu.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="img/python.png"
+                    alt="Image de PYTHON"
+                    style="width: 250px; height: 250px"
+                    id="card-img-1"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <h6>PYTHON</h6>
+
+                  <p>
+                    Depuis mes 15 ans, j'apprends le Python en autodidacte, j'ai
+                    commencé lorsque j'étais en seconde mais j'ai continué de
+                    mon coté pour apprendre d'avantage.
+                  </p>
+                  <p>
+                    J'ai aussi beaucoup appris sur Python pendant la
+                    <span class="link"
+                      ><a href="monparcourspedagogique.html#lycee"
+                        >Terminale</a
+                      ></span
+                    >
+                    et j'ai continué d'apprendre lors de mon deuxième stage en
+                    <span class="link"
+                      ><a href="monparcourspedagogique.html#btssio"
+                        >BTS SIO</a
+                      ></span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="img/html.png"
+                    alt="Image de HTML"
+                    style="width: 250px; height: 250px"
+                    id="card-img-2"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <h6>HTML/CSS</h6>
+                  <p>
+                    Depuis mes 17 ans, j'apprends le HTML/CSS en autodidacte(et
+                    une partie de JavaScript, pour le Web ou NodeJS pour un
+                    projet personnel)
+                  </p>
+                  <p>
+                    Pour le développement WEB, le HTML/CSS est la base de la
+                    base, c'est le squelette d'un site. J'ai appris un peu plus
+                    sur JavaScript en terminale avec des stages d'intervenants
+                    de la
+                    <span class="link"
+                      ><a href="monparcourspedagogique.html#lycee"
+                        >WebCup</a
+                      ></span
+                    >, et en BTS SIO, où on a repris certaines bases.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="img/git.png"
+                    alt="Image de Git"
+                    style="width: 250px; height: 250px"
+                    id="card-img-3"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <h6>GIT</h6>
+                  <p>
+                    Depuis mes 18 ans, j'apprends le Git en autodidacte grâce à
+                    Java, il était nécessaire que je maîtrise cet outil
+                    performant pour gérer mes applications/plugins.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 style="position: relative; margin-top: 20%" id="pedagogique">
+            Mon parcours pédagogique
+          </h3>
+          <div class="content">
+            <div
+              class="flip-card-click"
+              onclick="window.location.href='monparcourspedagogique.html#lycee';"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="img/ecole.png"
+                      alt="Image de java"
+                      style="width: 250px; height: 250px"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <h6>De la seconde au baccalauréat</h6>
+                    <p>Cliquez pour en savoir plus !</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flip-card-click"
+              onclick="window.location.href='monparcourspedagogique.html#btssio';"
+            >
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img
+                      src="img/btssio.png"
+                      alt="Image de java"
+                      style="width: 250px; height: 250px"
+                      id="card-img-4"
+                    />
+                  </div>
+                  <div class="flip-card-back">
+                    <h6>Mon BTS SIO</h6>
+                    <p>Cliquez pour en savoir plus !</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h3 style="position: relative; margin-top: 20%" id="et-ensuite">
+            Mon futur parcours
+          </h3>
+          <div class="content">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img
+                    src="img/question.png"
+                    alt="Image de quelqu'un qui réfléchi"
+                    style="width: 250px; height: 250px"
+                  />
+                </div>
+                <div class="flip-card-back">
+                  <h6>Je voudrais devenir professeur</h6>
+                  <p>
+                    J'envisage un bac+4 Concepteur Développeur d'applications
+                  </p>
+                  <p>
+                    Puis un M2 Professionnel Informatique ou un M1 MEEF
+                    Informatique
+                  </p>
+                  <p>
+                    Puis je passerai mon concours CAPET ou CAPES spécialité
+                    informatique, pendant ou après ma cinquième année. (ou
+                    quatrième si l'insitut propose)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <a
+        href="download/NEW_CV_HOAREAU_STEVE.pdf"
+        target="_blank"
+        id="cv"
+        class="link"
+        ><img
+          src="img/pdf.png"
+          title="Mon CV"
+          style="width: 60px; height: 60px"
+          alt="Image de fichier pdf"
+        /><br />Voir mon CV</a
+      >
+      <br /><br /><br /><br /><br /><br /><br /><br />
+      <div class="footer">
+        <a href="mentions-legales.html" target="_blank"
+          >Steve HOAREAU © 2022 | Mentions Légales</a
+        >
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
